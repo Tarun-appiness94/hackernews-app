@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./TopStory.css";
 import StoryTemp from '../Story-tamp/StoryTemp';
-import axios from 'axios';
 import { getStoryIds } from '../Axios/Axios';
 
 const TopStory = () => {
@@ -29,14 +28,14 @@ const TopStory = () => {
       // slicedTopStoryId.length==0 ? 
       // <p>Loading</p> :
 
-      slicedTopStoryId.length==0 ?
+      slicedTopStoryId.length===0 ?
   
     <div className='loader'>
-      <p className="loading">Loading...fgffg</p>
+      <p className="loading">Loading...</p>
     </div>
     
     :
-      slicedTopStoryId.map(storyId=><StoryTemp storyId = {storyId}/>)
+      slicedTopStoryId.map(storyId=><StoryTemp key={storyId} storyId = {storyId}/>)
 
     
 

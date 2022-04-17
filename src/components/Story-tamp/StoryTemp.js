@@ -20,7 +20,6 @@ const StoryTemp = ({storyId}) => {
     // return(getTopStory().then(res=>(res)));
     // })
     getStory(storyId).then(data=> data && data.url && setStory(data));
-    console.log(story)
 
 
 
@@ -42,7 +41,7 @@ const StoryTemp = ({storyId}) => {
     //   <p className="loading">Lo...</p>
     // </div>
    
-    <div className='story'>
+    <div className='story' key={story.id}>
       <div className='story-title'><a target="_black" href={story.url}>{story.title} </a></div>
       <div className='story-info'>
       <span><a target="_blank" href={`https://news.ycombinator.com/user?id=${story.by}`}>{story.by}</a></span>&nbsp;|&nbsp;

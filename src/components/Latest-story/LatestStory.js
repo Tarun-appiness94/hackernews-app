@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./LatestStory.css";
 import StoryTemp from '../Story-tamp/StoryTemp'
 import { useState, useEffect } from 'react';
 import { getStoryIds } from '../Axios/Axios';
@@ -14,10 +15,10 @@ const LatestStory = () => {
   
 
   return (
-      slicedNewStoryId.length==0 ? 
+      slicedNewStoryId.length===0 ? 
   
     <div className='loader'>
-      <p className="loading">Loading...ghfhfhfhffhgfh</p>
+      <p className="loading">Loading...</p>
     </div>
     
    :

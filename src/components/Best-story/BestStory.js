@@ -1,9 +1,10 @@
 import React from 'react';
+import "./BestStory.css";
 import StoryTemp from '../Story-tamp/StoryTemp';
 import { useState, useEffect } from 'react';
 import { getStoryIds } from '../Axios/Axios';
 
-const BestStory = () => {
+const BestStory = () => { 
   const [bestStoryId, setBestStoryId] = useState([]);
   
   useEffect(()=>{
@@ -14,10 +15,10 @@ const BestStory = () => {
   
 
   return (
-      slicedBestStoryId.length==0 ? 
+      slicedBestStoryId.length===0 ? 
   
     <div className='loader'>
-      <p className="loading">Loading...ghfhfhfhffhgfh</p>
+      <p className="loading">Loading...</p>
     </div>
     
     :
