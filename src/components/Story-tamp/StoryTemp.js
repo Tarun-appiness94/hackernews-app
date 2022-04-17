@@ -21,8 +21,6 @@ const StoryTemp = ({storyId}) => {
     // })
     getStory(storyId).then(data=> data && data.url && setStory(data));
 
-
-
   },[])
 
 
@@ -37,9 +35,6 @@ const StoryTemp = ({storyId}) => {
   
   return (
     (story.title) ? 
-    // <div className='loader'>
-    //   <p className="loading">Lo...</p>
-    // </div>
    
     <div className='story' key={story.id}>
       <div className='story-title'><a target="_black" href={story.url}>{story.title} </a></div>

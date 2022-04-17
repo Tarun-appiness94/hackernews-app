@@ -23,7 +23,7 @@ const BestStory = () => {
     
     :
       
-      slicedBestStoryId.map(storyId=><StoryTemp storyId = {storyId}/>)
+      slicedBestStoryId.map(storyId=><StoryTemp key={storyId} storyId = {storyId}/>)
     )
 }
 

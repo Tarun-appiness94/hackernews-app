@@ -22,7 +22,7 @@ const LatestStory = () => {
     </div>
     
    :
-      slicedNewStoryId.map(storyId=><StoryTemp storyId = {storyId}/>)
+      slicedNewStoryId.map(storyId=><StoryTemp key={storyId} storyId = {storyId}/>)
     )
 }
 
