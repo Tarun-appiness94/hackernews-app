@@ -15,7 +15,13 @@ const BestStory = () => {
 
   return (
       slicedBestStoryId.length==0 ? 
-      <p>Loading</p> :
+  
+    <div className='loader'>
+      <p className="loading">Loading...ghfhfhfhffhgfh</p>
+    </div>
+    
+    :
+      
       slicedBestStoryId.map(storyId=><StoryTemp storyId = {storyId}/>)
     )
 }

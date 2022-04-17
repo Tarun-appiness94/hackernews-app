@@ -37,7 +37,11 @@ const StoryTemp = ({storyId}) => {
 
   
   return (
-    story.length==0 ? <p>Loading</p> :
+    (story.title) ? 
+    // <div className='loader'>
+    //   <p className="loading">Lo...</p>
+    // </div>
+   
     <div className='story'>
       <div className='story-title'><a target="_black" href={story.url}>{story.title} </a></div>
       <div className='story-info'>
@@ -55,6 +59,8 @@ const StoryTemp = ({storyId}) => {
       </span>
       </div>
     </div>
+    :
+    <></>
   )
 }
 

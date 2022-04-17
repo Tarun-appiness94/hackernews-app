@@ -15,7 +15,12 @@ const LatestStory = () => {
 
   return (
       slicedNewStoryId.length==0 ? 
-      <p>Loading</p> :
+  
+    <div className='loader'>
+      <p className="loading">Loading...ghfhfhfhffhgfh</p>
+    </div>
+    
+   :
       slicedNewStoryId.map(storyId=><StoryTemp storyId = {storyId}/>)
     )
 }
