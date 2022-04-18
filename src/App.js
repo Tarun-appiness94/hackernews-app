@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Header />
+        <Header/>
         <Routes>
           <Route path="/" exact element={<Navigate to="/top"/>}/>
           <Route path="/top"  exact element={<TopStory />} />
