@@ -15,7 +15,7 @@ const StoryTemp = ({storyId}) => {
     (story.title)
       ?
       <div className='story' key={story.id}>
-        <div className='story-title'><a target="_black" rel="noreferrer" href={story.url}>{story.title} </a></div>
+        <div className='story-title'><a target="_blank" rel="noreferrer" href={story.url}>{story.title} </a></div>
         <div className='story-info'>
           <span><a target="_blank" rel="noreferrer" href={`https://news.ycombinator.com/user?id=${story.by}`}>{story.by}</a></span>&nbsp;|&nbsp;
           <span>

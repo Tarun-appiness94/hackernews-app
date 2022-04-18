@@ -20,7 +20,7 @@ const TopStory = () => {
         <p className="loading">Loading...</p>
       </div>
       :
-      slicedTopStoryId.map(storyId => <StoryTemp key={storyId} storyId={storyId} />)
+      slicedTopStoryId.map(topStoryId => <StoryTemp key={topStoryId} storyId={topStoryId} />)
 
   )
 }

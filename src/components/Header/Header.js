@@ -5,9 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
 
   function navLinkStyle ({isActive}) {
-    return{
-      fontWeight : isActive ? "bold" : ""
-    }
+    return{fontWeight : isActive ? "bold" : ""}
   }
 
   return (
