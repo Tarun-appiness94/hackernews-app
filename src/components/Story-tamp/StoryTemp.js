@@ -19,7 +19,7 @@ const StoryTemp = ({storyId}) => {
         <div className='story-info'>
           <span><a target="_blank" rel="noreferrer" href={`https://news.ycombinator.com/user?id=${story.by}`}>{story.by}</a></span>&nbsp;|&nbsp;
           <span>
-            {new Date(story.time * 1000).toLocaleDateString('en-US', {
+            {new Date(story.time*1000).toLocaleDateString('en-IN', {
               hour: 'numeric',
               minute: 'numeric'
             })}
